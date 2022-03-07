@@ -11,3 +11,14 @@ get '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
   'Hello'
 end
+
+post '/' do
+  puts 'xxxxxxxxxxxxxxxxxxxx'
+  puts 'xxxxxxxxxxxxxxxxxxxx'
+  puts 'xxxxxxxxxxxxxxxxxxxx'
+  p params
+  puts 'xxxxxxxxxxxxxxxxxxxx'
+  puts 'xxxxxxxxxxxxxxxxxxxx'
+  puts 'xxxxxxxxxxxxxxxxxxxx'
+  'world'
+end

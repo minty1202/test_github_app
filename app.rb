@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'json'
 
 get '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
@@ -23,8 +24,14 @@ post '/' do
   p request.env['HTTP_X_GITHUB_EVENT']
   p request.env
   p request
+
+
+  request.body.rewind
+  request_payload = JSON.parse(request.body.read)
+  puts request_payload
   'aaaaaaa'
 end
+#
 #
 #
 #

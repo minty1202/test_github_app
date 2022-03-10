@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.23.0)
+    jwt (2.3.0)
     multi_json (1.15.0)
     rack (1.6.13)
     rack-protection (1.5.5)
@@ -25,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jwt
   sinatra (~> 1.4, >= 1.4.8)
   sinatra-contrib
 

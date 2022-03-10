@@ -21,9 +21,11 @@ post '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
   puts 'POST'
   p request.env['HTTP_X_GITHUB_EVENT']
+  p request.env
   p request
   'aaaaaaa'
 end
+#
 #
 #
 #

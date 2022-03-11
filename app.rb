@@ -41,6 +41,10 @@ post '/' do
   request.body.rewind
   request_payload = JSON.parse(request.body.read)
   puts request_payload
+  File.open("test.json", "w") do |json|
+    json.puts(request_payload)
+  end
+
   puts ''
   puts ''
   puts ''
@@ -60,6 +64,7 @@ post '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
   'aaaaaaa'
 end
+#
 #
 #
 #

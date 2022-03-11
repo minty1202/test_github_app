@@ -17,13 +17,13 @@ post '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
   puts 'xxxxxxxxxxxxxxxxxxxx'
   puts 'xxxxxxxxxxxxxxxxxxxx'
-  p params
+  # p params
   puts 'xxxxxxxxxxxxxxxxxxxx'
   puts 'xxxxxxxxxxxxxxxxxxxx'
   puts 'POST'
-  p request.env['HTTP_X_GITHUB_EVENT']
-  p request.env
-  p request
+  # p request.env['HTTP_X_GITHUB_EVENT']
+  # p request.env
+  # p request
 
 
   puts 'xxxxxxxxxxxxxxxxxxxx'
@@ -64,6 +64,7 @@ post '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
   'aaaaaaa'
 end
+#
 #
 #
 #

@@ -42,7 +42,7 @@ post '/' do
   request_payload = JSON.parse(request.body.read)
   puts request_payload
   File.open("test.json", "w") do |json|
-    json.puts(request_payload)
+    json.puts(request.body.read)
   end
 
   puts ''
@@ -64,6 +64,7 @@ post '/' do
   puts 'xxxxxxxxxxxxxxxxxxxx'
   'aaaaaaa'
 end
+#
 #
 #
 #
